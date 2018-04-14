@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,55 @@ namespace ÉttermiSzoftver
         public wndFoAblak()
         {
             InitializeComponent();
+            var DataDir = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName) + "\\Telefonszamok_DAL_Konzol";
+            AppDomain.CurrentDomain.SetData("DataDirectory", DataDir);
+            var s = AppDomain.CurrentDomain.GetData("DataDirectory");
+
+        }
+
+        private void miFelvetel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miAllapot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miSzamla_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miBejelentkezes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miLegnepszerubb_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miNapi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miHeti_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miHavi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miPincer_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

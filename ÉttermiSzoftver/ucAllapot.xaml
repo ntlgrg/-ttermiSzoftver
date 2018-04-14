@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="ÉttermiSzoftver.ucAllapot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ÉttermiSzoftver"
+             mc:Ignorable="d" 
+             d:DesignHeight="436" d:DesignWidth="400">
+    <Grid Background="#FF8F6D11">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="42"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lbAsztal" Content="Asztal:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ComboBox x:Name="cbAsztal" Grid.Column="1" Margin="0,0,87,0" VerticalAlignment="Center" Width="170" />
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+            <ListBox x:Name="lbLevesek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
+            <Button x:Name="btReceptL" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+            <ListBox x:Name="lbFoetelek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
+            <Button x:Name="btReceptF" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+            <ListBox x:Name="lbDesszertek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
+            <Button x:Name="btReceptD" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+        </StackPanel>
+        <ListBox x:Name="lbItalok" Grid.Column="1" Grid.Row="4" Height="66" VerticalAlignment="Center" Width="170" Margin="0,0,87,0" />
+
+    </Grid>
+</UserControl>
