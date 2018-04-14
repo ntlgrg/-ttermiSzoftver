@@ -24,5 +24,15 @@ namespace ÉttermiSzoftver
         {
             InitializeComponent();
         }
+
+        private void btVissza_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btKovetkezo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -24,5 +24,30 @@ namespace ÉttermiSzoftver
         {
             InitializeComponent();
         }
+
+        private void btMentes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btVissza_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btReceptL_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btReceptF_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btReceptD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

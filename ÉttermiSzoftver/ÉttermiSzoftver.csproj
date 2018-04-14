@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ucAllapot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ucFelvetel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -63,11 +67,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ucKimutatasok.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ucLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="wndLogin.xaml">
+    <Page Include="ucNepszeru.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucPincer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucRecept.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -79,17 +95,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ucAllapot.xaml.cs">
+      <DependentUpon>ucAllapot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ucFelvetel.xaml.cs">
       <DependentUpon>ucFelvetel.xaml</DependentUpon>
     </Compile>
     <Compile Include="ucFelvetelEtel.xaml.cs">
       <DependentUpon>ucFelvetelEtel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ucKimutatasok.xaml.cs">
+      <DependentUpon>ucKimutatasok.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ucLogin.xaml.cs">
       <DependentUpon>ucLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="wndLogin.xaml.cs">
-      <DependentUpon>wndLogin.xaml</DependentUpon>
+    <Compile Include="ucNepszeru.xaml.cs">
+      <DependentUpon>ucNepszeru.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucPincer.xaml.cs">
+      <DependentUpon>ucPincer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucRecept.xaml.cs">
+      <DependentUpon>ucRecept.xaml</DependentUpon>
     </Compile>
     <Compile Include="wndFoAblak.xaml.cs">
       <DependentUpon>wndFoAblak.xaml</DependentUpon>

@@ -5,35 +5,65 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ÉttermiSzoftver"
              mc:Ignorable="d" 
-             d:DesignHeight="436" d:DesignWidth="400">
+             d:DesignHeight="646" d:DesignWidth="400">
     <Grid Background="#FF8F6D11">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="70*"/>
             <ColumnDefinition Width="121*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="42"/>
             <RowDefinition Height="88"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="88"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="88"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="88"/>
             <RowDefinition Height="42"/>
         </Grid.RowDefinitions>
-        <Label x:Name="lbAsztal" Content="Asztal:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
-        <ComboBox x:Name="cbAsztal" Grid.Column="1" Margin="0,0,87,0" VerticalAlignment="Center" Width="170" />
+<!--Asztalok-->
+        <Label Content="Asztal:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ComboBox x:Name="cbAsztal" Grid.Column="1" Margin="0,0,63,0" VerticalAlignment="Center" Width="170" />
+<!--Levesek-->
+        <Label  Content="Rendelt Levesek:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
             <ListBox x:Name="lbLevesek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
-            <Button x:Name="btReceptL" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+            <Button x:Name="btReceptL" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" Click="btReceptL_Click" />
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+        <Label Content="Állapot:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ComboBox x:Name="cbLevesAll" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Width="170" Margin="0,0,63,0" />
+        <Label  Content="Megjegyzés:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <TextBlock x:Name="tbMegL"  VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" Background="#FFE0B02D" Height="20" Width="170" Margin="0,0,63,0" />
+<!--Főételekk-->
+        <Label Content="Rendelt Főételek:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
             <ListBox x:Name="lbFoetelek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
-            <Button x:Name="btReceptF" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+            <Button x:Name="btReceptF" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" Click="btReceptF_Click" />
         </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+        <Label Content="Állapot:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ComboBox x:Name="cbFoAll" Grid.Column="1" Grid.Row="5"   VerticalAlignment="Center" Width="170" Margin="0,0,63,0" />
+        <Label  Content="Megjegyzés:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="6" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <TextBlock x:Name="tbMegF"  VerticalAlignment="Center" Grid.Column="1" Grid.Row="6" Background="#FFE0B02D" Height="20" Width="170" Margin="0,0,63,0" />
+<!--Desszertek-->
+        <Label Content="Rendelt Desszertek:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="7" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal">
             <ListBox x:Name="lbDesszertek" Margin="10,10,0,0" 	 Height="66" VerticalAlignment="Top" Width="170" />
-            <Button x:Name="btReceptD" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" />
+            <Button x:Name="btReceptD" Content="Recept" Margin="10,10,10,0" VerticalAlignment="Top" Width="40" Click="btReceptD_Click" />
         </StackPanel>
-        <ListBox x:Name="lbItalok" Grid.Column="1" Grid.Row="4" Height="66" VerticalAlignment="Center" Width="170" Margin="0,0,87,0" />
+        <Label Content="Állapot:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ComboBox x:Name="cbDesszertAll" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Width="170" Margin="0,0,63,0" />
+        <Label  Content="Megjegyzés:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="9" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <TextBlock x:Name="tbMegD"  VerticalAlignment="Center" Grid.Column="1" Grid.Row="9" Background="#FFE0B02D" Height="20" Width="170" Margin="0,0,63,0" />
+<!--Italok-->
+        <Label Content="Rendelt Italok:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="10" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+        <ListBox x:Name="lbItalok" Grid.Column="1" Grid.Row="10" Height="66" VerticalAlignment="Center" Width="170" Margin="0,0,63,0" />
+
+        <Button x:Name="btMentes" Content="Mentés" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="11" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20" Background="#FFDEC173" Click="btMentes_Click"  />
+        <Button x:Name="btVissza" Content="Vissza" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Grid.Column="0" Grid.Row="11" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="16" Background="#FFDEC173" Click="btVissza_Click"  />
 
     </Grid>
 </UserControl>

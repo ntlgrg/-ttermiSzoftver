@@ -16,28 +16,13 @@ using System.Windows.Shapes;
 namespace ÉttermiSzoftver
 {
     /// <summary>
-    /// Interaction logic for ucLogin.xaml
+    /// Interaction logic for ucKimutatasok.xaml
     /// </summary>
-    public partial class ucLogin : UserControl
+    public partial class ucKimutatasok : UserControl
     {
-        public ucLogin()
+        public ucKimutatasok()
         {
             InitializeComponent();
-        }
-
-        private void btBelepes_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btMegse_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-
         }
     }
 }

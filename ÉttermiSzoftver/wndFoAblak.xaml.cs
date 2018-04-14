@@ -54,23 +54,18 @@ namespace ÉttermiSzoftver
         {
 
         }
-
-        private void miNapi_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void miHeti_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void miHavi_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+        
         private void miPincer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miKijelentkezes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void miKimutatas_Click(object sender, RoutedEventArgs e)
         {
 
         }

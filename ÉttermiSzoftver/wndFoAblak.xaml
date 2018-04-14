@@ -5,77 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ÉttermiSzoftver"
         mc:Ignorable="d"
-        Title="Norbi's Restaurant" Height="438" Width="731" Foreground="#FF2E2409">
+        Title="Norbi's Restaurant" Height="1000" Width="1668" Foreground="#FF2E2409">
     <Grid>
         <Grid >
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Menu x:Name="mnFomenu" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="0" Background="#FF8F6D11" >
+            <Menu x:Name="mnFomenu" Height="75" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="0" Background="#FF8F6D11" >
                 <Menu.ItemsPanel>
                     <ItemsPanelTemplate>
                         <StackPanel Orientation="Horizontal" />
                     </ItemsPanelTemplate>
                 </Menu.ItemsPanel>
-                <!--<MenuItem Header="Étlap" x:Name="miEtlap" FontSize="20" FontFamily="Freestyle Script" >
-                    <MenuItem Header="Italok" x:Name="miItalok" FontFamily="Mistral" FontSize="15" Height="20" >
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/ital.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Elõételek/Levesek" x:Name="miLeves" FontFamily="Mistral" FontSize="15" Height="20">
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/leves.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Fõételek" x:Name="miFoetel" FontFamily="Mistral" FontSize="15" Height="20" >
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/foetel.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Desszertek" x:Name="miDesszert" FontFamily="Mistral" FontSize="15" Height="20" >
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/suti.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Heti Menü" x:Name="miHetiMenu" FontFamily="Mistral" FontSize="15" Height="20" >
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="14" Source="/Kepek/menu.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                </MenuItem>-->
-                <MenuItem Header="Rendelés" x:Name="miRendeles" FontSize="20" FontFamily="Freestyle Script"  Visibility="Visible">
-                    <MenuItem Header="Felvétel" x:Name="miFelvetel" FontFamily="Mistral" FontSize="15" Height="20" Visibility="Visible" Click="miFelvetel_Click">
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/plus.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Állapot" x:Name="miAllapot" FontFamily="Mistral" FontSize="15"  Height="20" Visibility="Visible" Click="miAllapot_Click">
-                        <MenuItem.Icon>
-                            <Image Width="15" Height="15" Source="/Kepek/info.png"/>
-                        </MenuItem.Icon>
-                    </MenuItem>
-                    <MenuItem Header="Számlakészítés" x:Name="miSzamla" FontSize="15" FontFamily="Mistral" Visibility="Visible" Click="miSzamla_Click"/>
+                <!--Rendelés-->
+                <MenuItem Header="Rendelés" x:Name="miRendeles" FontSize="50" FontFamily="Freestyle Script"  Visibility="Visible">
+                    <MenuItem Header="Felvétel" x:Name="miFelvetel" FontFamily="Mistral" FontSize="40" Visibility="Visible" Click="miFelvetel_Click" />
+                    <MenuItem Header="Állapot" x:Name="miAllapot" FontFamily="Mistral" FontSize="40"  Visibility="Visible" Click="miAllapot_Click"/>
+                    <MenuItem Header="Számlakészítés" x:Name="miSzamla" FontSize="40" FontFamily="Mistral" Visibility="Visible" Click="miSzamla_Click"/>
                 </MenuItem>
-
-
-                <MenuItem Header="Bejelentkezés" x:Name="miBejelentkezes" FontSize="20" FontFamily="Freestyle Script" Visibility="Visible" Click="miBejelentkezes_Click" />
-                <MenuItem Header="Admin" x:Name="miAdmin" FontSize="20" FontFamily="Freestyle Script" Visibility="Visible">
-                    <MenuItem Header="Kimutatások" x:Name="miKimutatás" FontSize="20" FontFamily="Freestyle Script" >
-                        <MenuItem Header="Legnépszerûbb ételek" x:Name="miLegnepszerubb" FontFamily="Mistral" FontSize="15" Height="20" Click="miLegnepszerubb_Click"/>
-                        <MenuItem Header="Bevétel" x:Name="miBevetel" FontFamily="Mistral" FontSize="15" Height="20">
-                            <MenuItem Header="Napi" x:Name="miNapi" Height="20" Click="miNapi_Click" />
-                            <MenuItem Header="Heti" x:Name="miHeti" Height="20" Click="miHeti_Click"/>
-                            <MenuItem Header="Havi" x:Name="miHavi" Height="20" Click="miHavi_Click"/>
-                        </MenuItem>
-                    </MenuItem>
-                    <MenuItem Header="Pincérek" x:Name="miPincer" FontSize="20" FontFamily="Freestyle Script" Click="miPincer_Click"  />
+                <!--Bejelentkezés-->
+                <MenuItem Header="Bejelentkezés" x:Name="miBejelentkezes" FontSize="50" FontFamily="Freestyle Script" Visibility="Visible" Click="miBejelentkezes_Click" />
+                <!--Kijelentkezés-->
+                <MenuItem Header="Kijelentkezés" x:Name="miKijelentkezes" FontSize="50" FontFamily="Freestyle Script" Visibility="Visible" Click="miKijelentkezes_Click" />
+                <!--Admin-->
+                <MenuItem Header="Admin" x:Name="miAdmin" FontSize="50" FontFamily="Freestyle Script" Visibility="Visible">
+                    <MenuItem Header="Kimutatások" x:Name="miKimutatas" FontSize="40" FontFamily="Freestyle Script" Click="miKimutatas_Click" />
+                    <MenuItem Header="Pincérek" x:Name="miPincer" FontSize="40" FontFamily="Freestyle Script" Click="miPincer_Click"  />
+                    <MenuItem Header="Legnépszerûbb ételek" x:Name="miLegnepszerubb" FontFamily="Freestyle Script" FontSize="40"  Click="miLegnepszerubb_Click"/>
                 </MenuItem>
-                <MenuItem Header="Kijelentkezés" x:Name="miKijelentkezes" FontSize="20" FontFamily="Freestyle Script" Visibility="Collapsed" />
             </Menu>
             <Image x:Name="imFoKep" Grid.Row="1" Source="Kepek/foKep.jpg" Stretch="Fill" />
-            
         </Grid>
     </Grid>
 
