@@ -32,7 +32,7 @@ namespace ÉttermiSzoftver
 
         private void btMegse_Click(object sender, RoutedEventArgs e)
         {
-
+            ucLogin.Visibility = Visibility.Hidden;
         }
 
         private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
