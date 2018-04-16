@@ -11,7 +11,7 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dgReceptek"  CanUserResizeColumns="True" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="False" Background="#FF8F6D11">
+        <DataGrid x:Name="dgReceptek"  CanUserResizeColumns="True" CanUserSortColumns="True" CanUserAddRows="False" AutoGenerateColumns="False" Background="#FF8F6D11" Margin="0,1,0,-1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Megnevezés" Width="100" />
                 <DataGridTextColumn Header="Recept" Width="200" />

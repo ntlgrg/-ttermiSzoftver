@@ -34,6 +34,7 @@
                     <MenuItem Header="Pincérek" x:Name="miPincer" FontSize="40" FontFamily="Freestyle Script" Click="miPincer_Click"  />
                     <MenuItem Header="Legnépszerûbb ételek" x:Name="miLegnepszerubb" FontFamily="Freestyle Script" FontSize="40"  Click="miLegnepszerubb_Click"/>
                 </MenuItem>
+                
             </Menu>
             <Image x:Name="imFoKep" Grid.Row="1" Source="Kepek/foKep.jpg" Stretch="Fill" />
         </Grid>

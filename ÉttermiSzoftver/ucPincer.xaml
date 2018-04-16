@@ -12,9 +12,11 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="Dátum:"  Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
-            <DatePicker x:Name="tbHetDatum" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}" DisplayDate="{Binding DateTime.Now}"
-                    ToolTip="Válasszon dátumot" Width="180" Height="26" />
+            <DatePicker x:Name="tbDatumtol" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}" DisplayDate="{Binding DateTime.Now}"
+                    ToolTip="Válasszon dátumot" Width="120" Height="26" />
+            <Label Content="-"  Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            <DatePicker x:Name="tbDatumig" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}" DisplayDate="{Binding DateTime.Now}"
+                    ToolTip="Válasszon dátumot" Width="120" Height="26" />
         </StackPanel>
         
         <DataGrid x:Name="dgPincer"  HorizontalAlignment="Center" VerticalAlignment="Top" AutoGenerateColumns="False" Grid.Row="1">
