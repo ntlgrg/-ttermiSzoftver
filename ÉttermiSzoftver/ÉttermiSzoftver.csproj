@@ -95,6 +95,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Beleptetes.cs" />
     <Compile Include="ucAllapot.xaml.cs">
       <DependentUpon>ucAllapot.xaml</DependentUpon>
     </Compile>
@@ -160,6 +161,12 @@
     <Resource Include="Kepek\leves.png" />
     <Resource Include="Kepek\menu.png" />
     <Resource Include="Kepek\suti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ÉttermiSzoftver_DAL\ÉttermiSzoftver_DAL.csproj">
+      <Project>{395FC7E5-4B63-4665-A522-EBBEF8FDC773}</Project>
+      <Name>ÉttermiSzoftver_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
