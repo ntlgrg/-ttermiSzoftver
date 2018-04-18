@@ -17,6 +17,6 @@
                 <DataGridTextColumn Header="Recept" Width="200" />
             </DataGrid.Columns>
         </DataGrid>
-        <Image x:Name="imFoKep" Grid.Column="1"  Stretch="Uniform" Margin="0,0, 0,150"/>
+        <Image x:Name="imKep" Grid.Column="1"  Stretch="Uniform" Margin="5,10,5,150"/>
     </Grid>
 </UserControl>
