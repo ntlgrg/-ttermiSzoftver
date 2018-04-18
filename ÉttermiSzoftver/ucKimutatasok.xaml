@@ -8,9 +8,9 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Background="#FF8F6D11">
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 <!--Napi bevétel-->
         <Grid Grid.Row="0">
@@ -23,8 +23,10 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Content="Napi" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
-            <Label Content="Bevétel" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            <StackPanel Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+                <Label Content="Napi Bevétel" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            </StackPanel>
+            
             <DatePicker x:Name="tbNpDatum" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}" DisplayDate="{Binding DateTime.Now}"
                     ToolTip="Válasszon dátumot" Width="180" Height="26" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"/>
             <Label Content="Dátum:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
@@ -42,19 +44,17 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
+                
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Content="Heti" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
-            <Label Content="Bevétel" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
-            <DatePicker x:Name="tbHetDatum" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}" DisplayDate="{Binding DateTime.Now}"
-                    ToolTip="Válasszon dátumot" Width="180" Height="26" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <Label Content="Dátum:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            <Label Content="Az" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            <Label Content="utolsó heti bevétel" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="20"/>
+            
             <StackPanel Grid.Column="1" Grid.Row="8" Orientation="Horizontal">
                 <TextBlock x:Name="tbHeti" HorizontalAlignment="Left" VerticalAlignment="Center"  Background="#FFE0B02D" Height="20" Width="160" />
                 <Label Content="Ft" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="16"/>
             </StackPanel>
-            <Label Content="A heti bevétel:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="16"/>
+            <Label Content="Bevétel:" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Foreground="#FF2E2409" FontFamily="Mistral" FontSize="16"/>
         </Grid>
 <!--Havi bevétel-->
         <Grid Grid.Row="2">

@@ -59,10 +59,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ucFelvetel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ucFelvetelEtel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,9 +94,6 @@
     <Compile Include="Beleptetes.cs" />
     <Compile Include="ucAllapot.xaml.cs">
       <DependentUpon>ucAllapot.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ucFelvetel.xaml.cs">
-      <DependentUpon>ucFelvetel.xaml</DependentUpon>
     </Compile>
     <Compile Include="ucFelvetelEtel.xaml.cs">
       <DependentUpon>ucFelvetelEtel.xaml</DependentUpon>

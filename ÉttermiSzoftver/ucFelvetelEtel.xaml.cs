@@ -30,9 +30,6 @@ namespace ÉttermiSzoftver
 
         }
 
-        private void btKovetkezo_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+    
     }
 }
